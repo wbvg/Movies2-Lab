@@ -1,0 +1,25 @@
+<div id="search-container">
+      <h3>Movie Title Seeker<h3>
+
+      <form action="/seek" method="post">
+        <input type="text" name="title_search" placeholder="Please enter Movie title" autofocus>
+                  <br/><br/>
+        <button>Submit</button>
+      </form>
+</div>
+
+
+
+<div id="movie-container">
+<poster><img src=" <%=  @poster   %>">  </poster>
+
+
+      <h1 id="deets"><%= @title %> </h1><br/>
+      <year id="deets"> <%=  @year   %>    </year><br/>
+      <rated id="deets">  <%=   @rated  %>   </rated><br/>
+      <director id="deets">  <%= @director  %></director><br/>
+      <plot id="deets">   <%= @plot    %>   </plot>
+
+
+
+</div>

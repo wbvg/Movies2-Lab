@@ -1,0 +1,36 @@
+
+
+
+<div id="container">
+<h1>Yahoo!Finance Stock Price<h1>
+<form action="/quote" method="get">
+  <input type="text" name="feed" placeholder="Please enter Stock code:">
+            <br/>
+  <button>Find Stock quote</button>
+</form>
+
+
+
+
+
+
+
+  <h1><%= params[:feed]%></h1>
+
+
+
+
+
+  <h2>
+
+
+
+
+<p>The result of <%= params[:feed]%> is: <%= @bid %></p>
+</div>
+
+
+
+
+
+
